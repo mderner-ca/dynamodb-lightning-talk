@@ -20,11 +20,18 @@ DynamoDB is free as long as you:
 | This is not _per table_ this is for **_all tables in your account_** |
 
 
+# Protection
+
+Obviously you've got your IAM role stuff for granular access control, but you've also got point in time recovery (PITR), backup and restore, and table deletion protection.
+
+
 # Terms
 
-A source of data is called a **table** much as it is in other database services, a table contains many **items** (not records), and an item consists of one of more **attributes** (not fields). The initial table you create is known as the "base table".
+A source of data is called a **table** much as it is in other database services, a table contains many **items** (not records), and an item consists of one of more **attributes** (not fields). The initial table you create is known as the "base table".  
+Just quickly, each attribute has a max size of 400KB.
 
 # Contents
+- [Types](./types.md)
 - [Keys](./keys.md)
 - [Indexes](./indexes.md)
 - [Throughput](./throughput.md)
